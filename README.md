@@ -65,13 +65,13 @@ where `mu` is the location parameter and `beta > 0` is the scale parameter.
 ## Usage
 
 ```javascript
-import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
+import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@v0.2.1-deno/mod.js';
 ```
 
 #### logpdf( x, mu, beta )
@@ -148,7 +148,7 @@ y = mylogpdf( 12.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
+import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@v0.2.1-deno/mod.js';
 
 var beta;
 var mu;
