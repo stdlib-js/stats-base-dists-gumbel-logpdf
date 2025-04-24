@@ -58,20 +58,32 @@ where `mu` is the location parameter and `beta > 0` is the scale parameter.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-gumbel-logpdf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
+var logpdf = require( '@stdlib/stats-base-dists-gumbel-logpdf' );
 ```
 
 #### logpdf( x, mu, beta )
@@ -119,7 +131,7 @@ Returns a `function` for evaluating the logarithm of the [PDF][pdf] (PDF) for a 
 ```javascript
 var mylogpdf = logpdf.factory( 10.0, 2.0 );
 
-y = mylogpdf( 10.0 );
+var y = mylogpdf( 10.0 );
 // returns ~-1.693
 
 y = mylogpdf( 12.0 );
@@ -147,8 +159,8 @@ y = mylogpdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import logpdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gumbel-logpdf@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var logpdf = require( '@stdlib/stats-base-dists-gumbel-logpdf' );
 
 var beta;
 var mu;
@@ -169,6 +181,88 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/gumbel/logpdf.h"
+```
+
+#### stdlib_base_dists_gumbel_logcdf( x, mu, beta )
+
+Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).```
+
+```c
+double out = stdlib_base_dists_gumbel_logpdf( 0.0, 0.0, 2.0 );
+// returns ~-1.693
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **beta**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_gumbel_logpdf( const double x, const double mu, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/gumbel/logpdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double beta;
+    double mu;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 10.0 );
+        mu = random_uniform( 0.0, 10.0 );
+        beta = random_uniform( 0.0, 10.0 );
+        y = stdlib_base_dists_gumbel_logpdf( x, mu, beta );
+        printf( "x: %lf, µ: %lf, β: %lf, ln(f(x;µ,β)): %lf\n", x, mu, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -186,7 +280,7 @@ for ( i = 0; i < 10; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
