@@ -4,7 +4,29 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-04-24)
+
+<section class="features">
+
+### Features
+
+-   [`a92a6e3`](https://github.com/stdlib-js/stdlib/commit/a92a6e3876e93b826ab2a6c6cd550e952c24d788) - add C implementation of `stats/dists/gumbel/logpdf` [(#4085)](https://github.com/stdlib-js/stdlib/pull/4085)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3647](https://github.com/stdlib-js/stdlib/issues/3647)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +34,7 @@
 
 <details>
 
+-   [`a92a6e3`](https://github.com/stdlib-js/stdlib/commit/a92a6e3876e93b826ab2a6c6cd550e952c24d788) - **feat:** add C implementation of `stats/dists/gumbel/logpdf` [(#4085)](https://github.com/stdlib-js/stdlib/pull/4085) _(by Vinit Pandit, Philipp Burckhardt, stdlib-bot)_
 -   [`105b812`](https://github.com/stdlib-js/stdlib/commit/105b8121cd65f5bb520351b48c945996e1dfb6aa) - **bench:** refactor random number generation in `stats/base/dists/gumbel` [(#4933)](https://github.com/stdlib-js/stdlib/pull/4933) _(by Karan Anand, stdlib-bot)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
 
@@ -25,10 +48,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Karan Anand
 -   Philipp Burckhardt
+-   Vinit Pandit
 
 </section>
 
