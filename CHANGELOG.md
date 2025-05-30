@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-05-30)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`33ba5a0`](https://github.com/stdlib-js/stdlib/commit/33ba5a0d301d47b4d950ca6ed548dcc4a5bcc1a1) - **test:** add missing skips for native add-on tests _(by Philipp Burckhardt)_
 -   [`a92a6e3`](https://github.com/stdlib-js/stdlib/commit/a92a6e3876e93b826ab2a6c6cd550e952c24d788) - **feat:** add C implementation of `stats/dists/gumbel/logpdf` [(#4085)](https://github.com/stdlib-js/stdlib/pull/4085) _(by Vinit Pandit, Philipp Burckhardt, stdlib-bot)_
 -   [`105b812`](https://github.com/stdlib-js/stdlib/commit/105b8121cd65f5bb520351b48c945996e1dfb6aa) - **bench:** refactor random number generation in `stats/base/dists/gumbel` [(#4933)](https://github.com/stdlib-js/stdlib/pull/4933) _(by Karan Anand, stdlib-bot)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
