@@ -177,6 +177,22 @@ logEachMap( 'x: %0.4f, µ: %0.4f, β: %0.4f, ln(f(x;µ,β)): %0.4f', x, mu, beta
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <!-- C usage documentation. -->
 
 <section class="usage">
@@ -306,8 +322,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-gumbel-logpdf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-gumbel-logpdf
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-gumbel-logpdf/actions/workflows/test.yml/badge.svg?branch=v0.3.1
-[test-url]: https://github.com/stdlib-js/stats-base-dists-gumbel-logpdf/actions/workflows/test.yml?query=branch:v0.3.1
+[test-image]: https://github.com/stdlib-js/stats-base-dists-gumbel-logpdf/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-gumbel-logpdf/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-gumbel-logpdf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-gumbel-logpdf?branch=main
