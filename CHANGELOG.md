@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-25)
+## Unreleased (2026-04-12)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`9a51841`](https://github.com/stdlib-js/stdlib/commit/9a51841213eb13adbd6b8fe36d96c00aac9fbb17) - **bench:** refactor to use string interpolation in `stats/base` [(#11393)](https://github.com/stdlib-js/stdlib/pull/11393) _(by Karan Anand)_
 -   [`b7879ad`](https://github.com/stdlib-js/stdlib/commit/b7879adce2d3bf7a6a1d4e626fd60172b3e33155) - **docs:** fix missing and malformed section closing tags in README files _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Karan Anand
 -   Philipp Burckhardt
 
 </section>
