@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> [Gumbel][gumbel-distribution] distribution logarithm of [probability density function (PDF)][pdf].
+> [Gumbel][gumbel-distribution] distribution natural logarithm of [probability density function (PDF)][pdf].
 
 <section class="intro">
 
@@ -88,7 +88,7 @@ var logpdf = require( '@stdlib/stats-base-dists-gumbel-logpdf' );
 
 #### logpdf( x, mu, beta )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
 
 ```javascript
 var y = logpdf( 0.0, 0.0, 2.0 );
@@ -205,7 +205,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, β: %0.4f, ln(f(x;µ,β)): %0.4f', x, mu, beta
 
 #### stdlib_base_dists_gumbel_logpdf( x, mu, beta )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_gumbel_logpdf( 0.0, 0.0, 2.0 );
